@@ -1,4 +1,3 @@
-import streamlit as st
 print("パスワードは、始まりの日+妬ましき国")
 pas=input()
 if pas=="0914germany":
