@@ -1,6 +1,14 @@
-print("パスワードは、始まりの日+妬ましき国")
-pas=input()
-if pas=="0914germany":
-    print("正解")
-else:
-    print("不正解")
+import streamlit as st
+
+# タイトル
+
+
+# パスワード入力（●●で隠す）
+password = st.text_input("パスワードを入力してください", type="password")
+
+# ボタンを押したときに判定する
+if st.button("送信"):
+    if password == "0619germany":
+        st.success("正解")
+    else:
+        st.error("不正解です")
